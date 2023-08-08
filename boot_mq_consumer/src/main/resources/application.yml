@@ -1,0 +1,13 @@
+server:
+  port: 8081
+
+spring:
+  activemq:
+    broker-url: tcp://192.168.86.128:61616
+    user: admin
+    password: admin
+  jms: #指定连接的是队列(Queue)还是主题(Topic)
+    pub-sub-domain: false #false代表队列,true代表主题
+
+#定义连接的队列名
+myQueueName: springboot-activemq-queue
